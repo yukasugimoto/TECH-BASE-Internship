@@ -37,16 +37,16 @@ try{
  exit('データベース接続失敗。'.$e->getMessage());
 }
 //テーブルつくる
-//$sql = "CREATE TABLE IF NOT EXISTS `DATA`"
-//."("
-//. "`num` INT auto_increment primary key,"
-//. "`name` TEXT,"
-//. "`comment` TEXT,"
-//. "`pass` TEXT,"
-//. "`date` DATETIME"
-//.");";
-//$stmt = $pdo->query($sql);
-//$stmt -> execute();
+$sql = "CREATE TABLE IF NOT EXISTS `DATA`"
+."("
+. "`num` INT auto_increment primary key,"
+. "`name` TEXT,"
+. "`comment` TEXT,"
+. "`pass` TEXT,"
+. "`date` DATETIME"
+.");";
+$stmt = $pdo->query($sql);
+$stmt -> execute();
 
 //register to database
 //if pushed 'send' button
